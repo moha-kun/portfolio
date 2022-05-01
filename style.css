@@ -111,6 +111,86 @@ section {
     margin-bottom: 30px;
 }
 
+.aboutMe {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.aboutMe .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutMe .container .image {
+    width: 20em;
+    height: 20em;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 25px rgba(101, 101, 219, 0.8);
+}
+
+.aboutMe .container .image img {
+    max-width: 100%;
+}
+
+.aboutMe .container .bm-info p {
+    font-size: 1.1em;
+    font-weight: 400;
+    word-wrap: normal;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.team-card {
+    min-height: 25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team-card:hover .image img {
+    opacity: 0.9;
+}
+
+.team-card .image {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-card .image img {
+    max-width: 80%;
+    border-radius: 50%;
+}
+
+.team-card .container .social-icons a {
+    color: rgba(101, 101, 219);
+}
+
+.team-card .container .social-icons a:hover {
+    color: rgb(216, 92, 247);
+}
+
+.team-card .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons a {
+    padding: 0 15px;
+}
+
 .content {
     display: flex;
     justify-content: center;
@@ -149,7 +229,8 @@ section {
     margin: 10px;
 }
 
-.projects {
+.projects,
+.team {
     background-color: rgb(52, 52, 117);
 }
 
@@ -218,6 +299,11 @@ section {
     font-size: 1.5em;
 }
 
+.contact .content .card {
+    min-width: fit-content;
+    max-width: 100%;
+}
+
 .footer {
     background-color: rgb(52, 52, 117);
     color: white;
@@ -241,7 +327,6 @@ section {
     padding: 0 12px 0 0;
 }
 
-/*
 @media (max-width: 1023px) {
     header {
         padding: 12px 20px;
@@ -271,8 +356,9 @@ section {
         flex-direction: column;
         align-items: center;
     }
+
+
 }
-*/
 
 @media (max-width: 640px) {
     body {
@@ -286,6 +372,16 @@ section {
     .main h3 {
         font-size: 1.4em;
     }
+
+    .contact .info p {
+        font-size: 1em;
+    }
+
+    .aboutMe .container .image {
+        width: 15em;
+        height: 15em;
+    }
+
 }
 
 @media (max-width: 300px) {
@@ -299,5 +395,20 @@ section {
 
     .main h3 {
         font-size: 1.4em;
+    }
+
+    section {
+        padding: 1em;
+    }
+
+    .services,
+    .projects,
+    .contact {
+        padding: 5px;
+    }
+
+    .aboutMe .container .image {
+        width: 10em;
+        height: 10em;
     }
 }

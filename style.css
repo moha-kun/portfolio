@@ -26,6 +26,8 @@ header {
     background-color: aliceblue;
     width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 999;
     display: flex;
     justify-content: space-between;
@@ -33,11 +35,23 @@ header {
     padding: 10px 200px;
 }
 
+.mine {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 84px;
+    width: 50%;
+    z-index: 50;
+    background-color: aliceblue;
+}
+
 .navbar {
     display: none;
 }
 
 .logo {
+    z-index: 50;
     text-decoration: none;
     color: rgb(101, 101, 219);
     text-transform: uppercase;
@@ -422,7 +436,8 @@ section {
         display: none;
     }
 
-    .navbar {
+    .navbar,
+    .mine {
         display: inherit;
     }
 
@@ -445,6 +460,7 @@ section {
 
     .navbar .menu-items {
         display: flex;
+        z-index: 1;
     }
 
     .navbar .nav-container li {
@@ -477,7 +493,7 @@ section {
         width: 2.6em;
         top: 20px;
         left: 0.9em;
-        z-index: 5;
+        z-index: 1000;
         opacity: 0;
         cursor: pointer;
     }
@@ -489,7 +505,7 @@ section {
         position: absolute;
         top: 20px;
         left: 0.9em;
-        z-index: 2;
+        z-index: 999;
         flex-direction: column;
         justify-content: space-between;
     }
@@ -518,7 +534,7 @@ section {
 
     .navbar .menu-items {
         padding-top: 120px;
-        box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+        box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
         height: 100vh;
         width: 500%;
         transform: translate(150%);

@@ -11,7 +11,7 @@
 }
 
 body::-webkit-scrollbar {
-    width: 20px;
+    width: 5px;
 }
 
 body::-webkit-scrollbar-track {
@@ -574,6 +574,10 @@ section {
 @media (max-width: 300px) {
     body {
         font-size: 10px;
+    }
+
+    body::-webkit-scrollbar {
+        width: 0px;
     }
 
     .nav-container .checkbox {

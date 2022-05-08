@@ -148,7 +148,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: black;
+    color: white;
 }
 
 .aboutMe .container {
@@ -261,7 +261,8 @@ section {
 }
 
 .projects,
-.team {
+.team,
+.aboutMe {
     background-color: rgb(52, 52, 117);
 }
 
@@ -477,7 +478,8 @@ section {
 
     .navbar .nav-container a:hover {
         font-weight: bolder;
-        color: white;
+        color: rgb(216, 92, 247);
+        border-bottom: 1px solid rgba(216, 92, 247, 0.6);
     }
 
     .nav-container {
@@ -534,7 +536,7 @@ section {
 
     .navbar .menu-items {
         padding-top: 120px;
-        box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.7);
         height: 100vh;
         width: 500%;
         transform: translate(150%);

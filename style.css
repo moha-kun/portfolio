@@ -35,17 +35,6 @@ header {
     padding: 10px 200px;
 }
 
-.mine {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 84px;
-    width: 50%;
-    z-index: 50;
-    background-color: aliceblue;
-}
-
 .navbar {
     display: none;
 }
@@ -64,11 +53,12 @@ header {
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
-    padding-left: 30px;
+    padding: 0px 15px;
 }
 
 .navigation a:hover {
     color: rgb(216, 92, 247);
+    border-bottom: 1px solid rgba(216, 92, 247, 0.6);
 }
 
 section {
@@ -437,8 +427,7 @@ section {
         display: none;
     }
 
-    .navbar,
-    .mine {
+    .navbar {
         display: inherit;
     }
 
@@ -536,7 +525,7 @@ section {
 
     .navbar .menu-items {
         padding-top: 120px;
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(240, 248, 255, 0.7);
         height: 100vh;
         width: 500%;
         transform: translate(150%);
@@ -586,6 +575,7 @@ section {
 
     .nav-container .hamburger-lines {
         left: 1.1em;
+        font-size: 0.8em;
     }
 
     .main h2 {

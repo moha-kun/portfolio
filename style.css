@@ -169,15 +169,6 @@ section {
     margin-bottom: 10px;
 }
 
-.mail {
-    text-decoration: none;
-    color: rgb(101, 101, 219);
-}
-
-.mail:hover {
-    color: rgb(216, 92, 247);
-}
-
 .team-card {
     min-height: 25em;
     display: flex;
